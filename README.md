@@ -13,7 +13,7 @@
 
 | Latest Stable Release | Upstream URL |
 | :---: | :---: |
-| [Click here](https://github.com/pkgforge-dev/eduke32-AppImage/releases/latest) | [Click here](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| [Click here](https://github.com/pkgforge-dev/eduke32-AppImage/releases/latest) | [Click here](https://voidpoint.io/terminx/eduke32) |
 
 </div>
 

@@ -17,7 +17,7 @@
 
 </div>
 
-## Game assets go inside ./config/eduke32
+## ⚠️ Game assets go inside `./config/eduke32` ⚠️
 
 ---
 

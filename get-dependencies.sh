@@ -29,6 +29,7 @@ wget "$REPO"
 
 tar -xvf ./eduke32_src_20251111-10652-39967d866.tar.xz
 ls
+cd eduke32_20251111-10652-39967d866
 make PACKAGE_REPOSITORY=1 VC_REV=10652-39967d866 -j $(nproc)
 
 # install binaries, buildlicense, icon and desktop files

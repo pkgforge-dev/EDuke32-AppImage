@@ -11,7 +11,8 @@ pacman -Syu --noconfirm \
     flac      \
     glu       \
     libvorbis \
-    libvpx
+    libvpx    \
+	libxaw
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"

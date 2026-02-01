@@ -13,7 +13,7 @@ export DESKTOP=eduke32.desktop
 export DEPLOY_OPENGL=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/eduke32
+quick-sharun /usr/bin/*
 
 # Additional changes can be done in between here
 

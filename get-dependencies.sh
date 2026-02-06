@@ -35,4 +35,3 @@ make PACKAGE_REPOSITORY=1 VC_REV=10652-39967d866 -j$(nproc)
 
 mkdir -p /usr/bin
 mv -v eduke32 mapster32 /usr/bin
-cp -r source/duke3d/rsrc/game_icon.ico /usr/share/pixmaps/eduke32.ico

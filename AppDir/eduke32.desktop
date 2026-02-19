@@ -4,6 +4,7 @@ Name=EDuke32
 Comment=Advanced Duke Nukem 3D engine
 Icon=eduke32
 Exec=eduke32
+StartupWMClass=Eduke32
 Categories=Game;Shooter;
 Terminal=false
 StartupNotify=false

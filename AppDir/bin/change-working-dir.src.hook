@@ -1,3 +1,4 @@
+#!/bin/false
 dir=${XDG_CONFIG_HOME:-~/.config}/eduke32
 mkdir -p "$dir"
 cd "$dir"

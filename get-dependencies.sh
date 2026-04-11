@@ -23,7 +23,7 @@ make-aur-package gtk2
 
 echo "Building EDuke32..."
 echo "---------------------------------------------------------------"
-BVER="20251111-10652-39967d866"
+BVER="20260203-10664-ba6b7bb1d"
 REPO="http://dukeworld.com/eduke32/synthesis/$BVER/eduke32_src_$BVER.tar.xz"
 wget "$REPO"
 echo $BVER > ~/version
@@ -31,7 +31,7 @@ echo $BVER > ~/version
 tar -xvf ./eduke32_src_$BVER.tar.xz
 rm -f ./*.xz
 cd eduke32_$BVER
-make PACKAGE_REPOSITORY=1 VC_REV=10652-39967d866 -j$(nproc)
+make PACKAGE_REPOSITORY=1 VC_REV=10664-ba6b7bb1d -j$(nproc)
 
 mkdir -p /usr/bin
 mv -v eduke32 mapster32 /usr/bin

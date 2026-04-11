@@ -6,32 +6,22 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm \
-	glu       \
-	libdecor  \
-    libvpx	  \
-	sdl2
+pacman -Syu --noconfirm glu libvpx sdl2-compat
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
-get-debloated-pkgs --add-common --prefer-nano
-
-# Comment this out if you need an AUR package
-make-aur-package gtk2
-
-# If the application needs to be manually built that has to be done down here
+get-debloated-pkgs --add-common --prefer-nano gtk2-mini libdecor-mini
 
 echo "Building EDuke32..."
 echo "---------------------------------------------------------------"
-BVER="20251111-10652-39967d866"
+BVER="20260807-10669-ec5824db8"
 REPO="http://dukeworld.com/eduke32/synthesis/$BVER/eduke32_src_$BVER.tar.xz"
 wget "$REPO"
 echo $BVER > ~/version
 
 tar -xvf ./eduke32_src_$BVER.tar.xz
 rm -f ./*.xz
-cd eduke32_$BVER
-make PACKAGE_REPOSITORY=1 VC_REV=10652-39967d866 -j$(nproc)
-
-mkdir -p /usr/bin
-mv -v eduke32 mapster32 /usr/bin
+mkdir -p ./AppDir/bin
+cd ./eduke32_$BVER
+make PACKAGE_REPOSITORY=1 VC_REV=10669-ec5824db8 -j$(nproc)
+mv -v eduke32 mapster32 ../AppDir/bin

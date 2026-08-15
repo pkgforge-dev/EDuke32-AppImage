@@ -16,11 +16,6 @@ echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano gtk2-mini
 
-# Comment this out if you need an AUR package
-#make-aur-package PACKAGENAME
-
-# If the application needs to be manually built that has to be done down here
-
 echo "Building EDuke32..."
 echo "---------------------------------------------------------------"
 BVER="20260203-10664-ba6b7bb1d"

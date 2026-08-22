@@ -3,7 +3,7 @@
 # EDuke32-AppImage 🐧
 
 [![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/eduke32-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/eduke32-AppImage/releases/latest)
-[![CI Build Status](https://github.com//pkgforge-dev/eduke32-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/eduke32-AppImage/releases/latest)
+[![CI Build Status](https://github.com/pkgforge-dev/eduke32-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/eduke32-AppImage/releases/latest)
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/eduke32-AppImage)](https://github.com/pkgforge-dev/eduke32-AppImage/releases/latest)
 
 <p align="center">

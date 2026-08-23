@@ -7,14 +7,13 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-	glu      \
-	libdecor \
-    libvpx	 \
+	glu    \
+    libvpx \
 	sdl2
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
-get-debloated-pkgs --add-common --prefer-nano gtk2-mini
+get-debloated-pkgs --add-common --prefer-nano gtk2-mini libdecor-mini
 
 echo "Building EDuke32..."
 echo "---------------------------------------------------------------"

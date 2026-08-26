@@ -24,8 +24,7 @@ echo $BVER > ~/version
 
 tar -xvf ./eduke32_src_$BVER.tar.xz
 rm -f ./*.xz
-cd eduke32_$BVER
+mkdir -p ./AppDir/bin
+cd ./eduke32_$BVER
 make PACKAGE_REPOSITORY=1 VC_REV=10664-ba6b7bb1d -j$(nproc)
-
-mkdir -p /usr/bin
-mv -v eduke32 mapster32 /usr/bin
+mv -v eduke32 mapster32 ../AppDir/bin

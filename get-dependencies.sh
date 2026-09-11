@@ -14,7 +14,7 @@ get-debloated-pkgs --add-common --prefer-nano gtk2-mini libdecor-mini
 
 echo "Building EDuke32..."
 echo "---------------------------------------------------------------"
-BVER="20260203-10664-ba6b7bb1d"
+BVER="20260807-10669-ec5824db8"
 REPO="http://dukeworld.com/eduke32/synthesis/$BVER/eduke32_src_$BVER.tar.xz"
 wget "$REPO"
 echo $BVER > ~/version

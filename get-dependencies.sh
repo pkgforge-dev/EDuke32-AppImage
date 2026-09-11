@@ -23,5 +23,5 @@ tar -xvf ./eduke32_src_$BVER.tar.xz
 rm -f ./*.xz
 mkdir -p ./AppDir/bin
 cd ./eduke32_$BVER
-make PACKAGE_REPOSITORY=1 VC_REV=10664-ba6b7bb1d -j$(nproc)
+make PACKAGE_REPOSITORY=1 VC_REV=10669-ec5824db8 -j$(nproc)
 mv -v eduke32 mapster32 ../AppDir/bin
